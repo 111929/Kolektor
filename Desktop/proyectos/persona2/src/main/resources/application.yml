@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@//localhost:1521/xe
+    password: tankero
+    username: dario
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
+key:
+  usuario: http://26.219.245.248:8080/usuarios/search?dni=
